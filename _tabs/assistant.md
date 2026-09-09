@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 论文助手
+title: Assistant
 icon: fas fa-comments
 order: 5
 permalink: /assistant/

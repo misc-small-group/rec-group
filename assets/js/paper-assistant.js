@@ -5,6 +5,7 @@
   const el = name => document.getElementById('pa-' + name);
   const base = (app.dataset.apiBase || '').replace(/\/$/, '');
   const storageKey = 'small-group-paper-chat:' + base;
+  const requestedPaper = new URLSearchParams(location.search).get('paper');
   let saved = {};
   try { saved = JSON.parse(sessionStorage.getItem(storageKey) || '{}'); } catch (_) { /* A new tab can start fresh. */ }
   let token = saved.token || '', sessionId = saved.sessionId || '', currentJob = null, papers = [], busy = false;
@@ -104,7 +105,11 @@
       try {
         const job = await request('/api/jobs/' + jobId); failures = 0;
         el('progress').textContent = phase(job);
-        if (job.answer && job.answer !== lastText) { render(body, job.answer); body.classList.remove('pa-pending'); lastText = job.answer; }
+        if (job.answer && job.answer !== lastText) {
+          const log = el('messages'), follow = log.scrollHeight - log.clientHeight - log.scrollTop < 80;
+          render(body, job.answer); body.classList.remove('pa-pending'); lastText = job.answer;
+          if (follow) log.scrollTop = log.scrollHeight;
+        }
         if (['completed', 'failed', 'cancelled'].includes(job.status)) {
           if (job.status !== 'completed') { render(body, job.error || '已停止。'); el('progress').textContent = job.status === 'cancelled' ? '已停止，可继续提问' : '本次回答未完成'; }
           currentJob = null; setBusy(false); el('question').focus(); return;
@@ -124,8 +129,10 @@
     for (const paper of papers) { const option = document.createElement('option'); option.value = paper.id; option.textContent = paper.title; el('paper').append(option); }
     el('connect').hidden = true; el('chat').hidden = false; status('已连接 · 论文阅读助手', 'ready');
     empty(); source();
+    if (requestedPaper && papers.some(p => p.id === requestedPaper)) { el('paper').value = requestedPaper; source(); }
     if (sessionId) {
       const session = await request('/api/sessions/' + sessionId);
+      if (requestedPaper && papers.some(p => p.id === requestedPaper) && session.paper.id !== requestedPaper) { newSession(); return; }
       el('paper').value = session.paper.id; source();
       for (const entry of session.messages) message(entry.role, entry.content);
       el('suggestions').hidden = Boolean(session.messages.length);
