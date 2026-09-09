@@ -35,7 +35,7 @@ permalink: /assistant/
     </div>
     <div class="pa-source">
       <span id="pa-scope"></span>
-      <a id="pa-source-link" target="_blank" rel="noopener noreferrer">查看论文原文 ↗</a>
+      <a id="pa-source-link" href="https://arxiv.org/" target="_blank" rel="noopener noreferrer">查看论文原文 ↗</a>
     </div>
     <div class="pa-messages" id="pa-messages" role="log" aria-label="论文对话" aria-live="polite"></div>
     <div class="pa-suggestions" id="pa-suggestions">
