@@ -94,7 +94,7 @@
     if (paper) el('source-link').href = 'https://arxiv.org/abs/' + encodeURIComponent(paper.id) + 'v' + Number(paper.version);
   }
   function phase(job) {
-    const phases = {queued: '正在等待后端处理…', starting: '正在连接论文助手…', reading: '正在阅读论文材料…', thinking: '正在分析论文材料…', answering: '正在整理回答…', completed: '回答完成 · 可继续追问'};
+    const phases = {queued: '已连接，正在等待处理…', starting: '已连接，正在启动问答引擎（首次可能需要 1–3 分钟）…', reading: '正在阅读论文材料…', thinking: '正在分析论文材料…', answering: '正在整理回答…', completed: '回答完成 · 可继续追问'};
     return phases[job.phase] || '正在处理…';
   }
   async function poll(jobId, body) {
@@ -145,11 +145,12 @@
   }
   el('connect').addEventListener('submit', async event => {
     event.preventDefault(); error(); el('connect-button').disabled = true;
+    el('connect-button').textContent = '连接中…'; status('正在验证访问码…');
     try {
       const data = await request('/api/connect', {method: 'POST', body: JSON.stringify({access_code: el('code').value})});
       token = data.token; sessionId = ''; el('code').value = ''; persist(); await restore();
-    } catch (problem) { error(problem.message); }
-    finally { el('connect-button').disabled = false; }
+    } catch (problem) { status('暂未连接', 'error'); error(problem.message); }
+    finally { el('connect-button').disabled = false; el('connect-button').textContent = '连接助手'; }
   });
   function newSession() { if (busy) return; sessionId = ''; currentJob = null; persist(); empty(); source(); el('suggestions').hidden = false; error(); el('progress').textContent = '基于所选论文的已读取材料回答'; }
   el('new').addEventListener('click', newSession);
