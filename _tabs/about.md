@@ -21,12 +21,6 @@ order: 4
 3. 使用[论文助手]({{ '/assistant/' | relative_url }})围绕选定论文追问，例如“用一个小例子解释”“这项结论有哪些证据”。访问码由小组维护者提供。
 4. 在[小组讨论区](https://github.com/misc-small-group/rec-group/issues)分享阅读笔记、问题或勘误。讨论标题中注明 arXiv ID，便于归并同一篇论文的交流。
 
-## 论文如何进入速报
-
-当前从 arXiv 的 cs.IR 分类及其交叉分类收集论文，再按作者单位与研究方向筛选。机构名单沿用小组已有规则，关注互联网技术机构参与的研究；合作论文中任一作者单位命中即可通过，缺少可核实单位信息时暂缓自动收录。
-
-速报保留原文链接、短引文和阅读范围。助手目前使用已读取的论文片段，遇到未覆盖的内容会说明缺失信息。
-
 ## 参与维护
 
 欢迎在[网站仓库](https://github.com/misc-small-group/rec-group)提交阅读笔记和内容修正，或从 [Small Group 首页](https://misc-small-group.github.io/)进入其他小组。
