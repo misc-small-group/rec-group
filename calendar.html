@@ -1,0 +1,45 @@
+---
+layout: page
+title: 讨论日历
+description: 每周五 15:30–16:15，一起讨论推荐与检索论文。
+permalink: /calendar/
+toc: false
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/discussion-calendar.css' | relative_url }}">
+
+<div id="discussion-calendar" data-timezone="Asia/Shanghai" data-first-date="2026-09-18" data-start="15:30" data-end="16:15">
+  <p class="calendar-intro">留出 45 分钟，一起把论文里的问题聊清楚。</p>
+
+  <section class="discussion-next" aria-labelledby="discussion-next-label">
+    <div>
+      <p class="discussion-eyebrow" id="discussion-next-label">下一场讨论</p>
+      <p class="discussion-date" id="discussion-next-date">每周五</p>
+      <p class="discussion-time">15:30–16:15 <span>北京时间 · UTC+8</span></p>
+    </div>
+    <a class="calendar-add" href="{{ '/assets/calendar/friday-discussion.ics' | relative_url }}" download="推荐与检索组-周五讨论.ics">添加到我的日历 <span aria-hidden="true">↗</span></a>
+  </section>
+
+  <section class="discussion-month" aria-labelledby="calendar-month-title">
+    <div class="calendar-toolbar">
+      <h2 id="calendar-month-title" aria-live="polite">讨论月历</h2>
+      <div class="calendar-controls" aria-label="切换月份">
+        <button type="button" id="calendar-previous" aria-label="上个月">←</button>
+        <button type="button" id="calendar-current">本月</button>
+        <button type="button" id="calendar-next" aria-label="下个月">→</button>
+      </div>
+    </div>
+    <p class="calendar-legend"><span aria-hidden="true"></span> 周五讨论 · 15:30–16:15</p>
+    <table class="calendar-table">
+      <caption class="calendar-sr-only">北京时间月历，周五标为讨论时间</caption>
+      <thead><tr><th scope="col">一</th><th scope="col">二</th><th scope="col">三</th><th scope="col">四</th><th scope="col">五</th><th scope="col">六</th><th scope="col">日</th></tr></thead>
+      <tbody id="calendar-days"></tbody>
+    </table>
+    <noscript><p>每周五 15:30–16:15（北京时间）为固定讨论时间。启用 JavaScript 可查看月历，也可以直接下载上方日历文件。</p></noscript>
+  </section>
+
+  <p class="calendar-footnote">日历文件包含每周重复日程，可导入 Apple 日历、Outlook 等日历应用。此页展示固定讨论时段；临时调整以小组通知为准。</p>
+  <p class="calendar-back"><a href="{{ '/about/' | relative_url }}">← 返回关于</a><a href="{{ '/posts/' | relative_url }}">去论文库准备讨论 →</a></p>
+</div>
+
+<script src="{{ '/assets/js/discussion-calendar.js' | relative_url }}" defer></script>
