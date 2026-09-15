@@ -216,7 +216,7 @@ paper_pipeline:
   model: z-ai/glm-5.3-flash
   source_hash: 42a2d5cc2eea3ba833745d1e3c7ca685baa50fe880d31b54980e51feb9184038
   generated_date: '2026-09-15'
-  render_hash: 4ccd95a1e28c25cc1cde430e2c3a91f9182ba59b3b4022e35f7b3eb92dfa3b1e
+  render_hash: fe818d18bfa88a82d53badaaecf45e5fde2ffb2a1871817bf56e9fced32262a6
 institutions:
 - Tencent
 - Berkeley
@@ -234,33 +234,35 @@ institutions:
 - ByteDance
 ---
 
-今日收录 **25** 篇与小组方向相关的论文。各篇阅读范围不同，内容供筛选，完整结论请核对原文。
+| 排名 | 评分 | 论文 | 机构 | arXiv 链接 | 主题 |
+| ---: | ---: | --- | --- | --- | --- |
+| 1 | — | [Self-Indexing Attention for Compression-Compatible Sparse Long-Context LLM Inference](#arxiv-2609-13205) | Tencent | [2609.13205](https://arxiv.org/abs/2609.13205) | 稀疏注意力、长上下文推理、KV缓存压缩、注意力机制、推理加速 |
+| 2 | — | [ReCAST: Reward Credit Assignment across Timesteps for Online Diffusion Reinforcement](#arxiv-2609-13425) | Berkeley、UCLA | [2609.13425](https://arxiv.org/abs/2609.13425) | 强化学习、扩散模型、奖励微调、信用分配、多奖励优化 |
+| 3 | — | [Safety as a Constraint: Fine-Tuning a LLM Recommender to Explain Itself](#arxiv-2609-13657) | Netflix | [2609.13657](https://arxiv.org/abs/2609.13657) | 推荐系统、LLM、强化学习、解释生成、约束优化、奖励模型 |
+| 4 | — | [Addressing Cross-Stage Decoupling of Semantic and Collaborative Signals in Generative Recommendation](#arxiv-2609-13678) | Kuaishou | [2609.13678](https://arxiv.org/abs/2609.13678) | 生成式推荐、语义ID、表示对齐、协同过滤、双曲空间、模型结构设计 |
+| 5 | — | [JumpStart Your Policy Learning with Lessons from 160,000 Training Runs](#arxiv-2609-13730) | Microsoft | [2609.13730](https://arxiv.org/abs/2609.13730) | 离线强化学习、实证研究、超参数调优、基准评测、算法推荐、开源资源 |
+| 6 | — | [HarnessBandit: Joint Learnability-Transferability Scheduling for Multi-Harness Agentic Reinforcement Learning](#arxiv-2609-13739) | Alibaba | [2609.13739](https://arxiv.org/abs/2609.13739) | 强化学习、GRPO、多臂老虎机调度、智能体训练、梯度相似度 |
+| 7 | — | [SpectralShift: Effective Context Window Extension of Gated DeltaNet via Spectral Reparameterization](#arxiv-2609-14320) | Microsoft | [2609.14320](https://arxiv.org/abs/2609.14320) | 线性注意力、长上下文扩展、谱重参数化、Gated DeltaNet、持续预训练 |
+| 8 | — | [Neural Modal Decomposition: Architectural Priors from Observables](#arxiv-2609-14402) | Princeton | [2609.14402](https://arxiv.org/abs/2609.14402) | 模型结构设计、物理仿真代理、模态分解、射频电磁、零样本泛化、架构先验 |
+| 9 | — | [VARG: Value-Aware and Ranking-Aligned Generative Retrieval for Dynamic E-commerce Search](#arxiv-2609-14493) | Alibaba | [2609.14493](https://arxiv.org/abs/2609.14493) | 生成式检索、语义ID、电商搜索、强化学习、在线AB实验 |
+| 10 | — | [MANE: A Multi-Path Adaptive Network for Edge Onloading of Deep Neural Networks](#arxiv-2609-14660) | Samsung | [2609.14660](https://arxiv.org/abs/2609.14660) | 边缘推理、分割计算、多路径网络、知识蒸馏、调度 |
+| 11 | — | [Func-R1: Incentivizing Mathematical Function Reasoning in Multimodal Large Language Models](#arxiv-2609-14779) | Tencent | [2609.14779](https://arxiv.org/abs/2609.14779) | 多模态、数学推理、强化学习、模型结构设计、后训练 |
+| 12 | — | [Route Me If You Can: A Benchmark for Query Reformulation Selection](#arxiv-2609-14885) | Berkeley、UCLA | [2609.14885](https://arxiv.org/abs/2609.14885) | 信息检索、查询改写、基准构建、LLM路由、检索排序、查询性能预测 |
+| 13 | — | [Forty Shades of Blue: Quality-Diversity Alignment via Mode-Conditioned Reinforcement Learning](#arxiv-2609-14896) | Stanford | [2609.14896](https://arxiv.org/abs/2609.14896) | 强化学习、LLM后训练、多样性生成、模式坍缩、GRPO、多智能体 |
+| 14 | — | [LazFormer: Scaling Transformers for Industrial Recommendation via Transferable Generative Pre-training](#arxiv-2609-14978) | Alibaba | [2609.14978](https://arxiv.org/abs/2609.14978) | 生成式推荐、推荐系统、预训练、Attention 机制、模型结构设计、工业排序 |
+| 15 | — | [Not All Prompts Are Equal: Exploration-Guided Prompt Scaffolding for Multimodal Reinforcement Post-Training](#arxiv-2609-15051) | Alibaba | [2609.15051](https://arxiv.org/abs/2609.15051) | 强化学习、RL后训练、多模态LLM、提示脚手架、数据课程、GRPO |
+| 16 | — | [DA-DLM: Explicitly Modeling Token Dependencies in Diffusion Language Models](#arxiv-2609-15070) | Tencent | [2609.15070](https://arxiv.org/abs/2609.15070) | 扩散语言模型、依赖建模、DAG、模型结构设计、Attention、并行解码 |
+| 17 | — | [<span class="paper-math">&#92;(&#92;mathbb&#123;SL&#125;(n)&#92;)</span> Representation Learning: An Intrinsic Mixed-Curvature Space with Higher Curvature Capacities and Deeper Order-Aware Composition](#arxiv-2609-15083) | Stanford | [2609.15083](https://arxiv.org/abs/2609.15083) | 表示学习、混合曲率、Finsler几何、李群、图嵌入、序感知复合 |
+| 18 | — | [Generate to Explore, Select to Exploit: Aligning LLM-based Headline Generation with Personalized Recommendation](#arxiv-2609-15094) | Baidu | [2609.15094](https://arxiv.org/abs/2609.15094) | 生成式推荐、LLM标题生成、GSPO强化学习、多样性奖励、Bandit选择、线上A/B实验 |
+| 19 | — | [Reason What Matters: Retrieval-Grounded Reasoning for Universal Multimodal Embeddings](#arxiv-2609-15296) | Kuaishou | [2609.15296](https://arxiv.org/abs/2609.15296) | 多模态检索、通用多模态嵌入、强化学习信用分配、思维链推理、推理加速、投机解码 |
+| 20 | — | [Specifying Reward Functions for RL Without Environment Sampling](#arxiv-2609-15544) | Stanford | [2609.15544](https://arxiv.org/abs/2609.15544) | 强化学习、奖励函数设计、LLM、偏好学习、主动学习 |
+| 21 | — | [The Token Before the Value Is the Key: How Hybrid Architectures Organize Induction Circuits](#arxiv-2609-15545) | Tencent | [2609.15545](https://arxiv.org/abs/2609.15545) | 混合架构、归纳电路、可解释性、激活修补、Attention机制、模型结构设计 |
+| 22 | — | [Self-Evolving Memory for Generative Recommendation](#arxiv-2609-15598) | Meta | [2609.15598](https://arxiv.org/abs/2609.15598) | 生成式推荐、持续学习、稀疏记忆层、梯度冲突、模型架构、推荐系统 |
+| 23 | — | [Safe Meta-Reinforcement Learning via Information Space Reachability](#arxiv-2609-15915) | MIT | [2609.15915](https://arxiv.org/abs/2609.15915) | 强化学习、安全强化学习、元学习、可达性分析、控制 |
+| 24 | — | [Disentangling Representation Evolution in Transformers through Directional Decomposition](#arxiv-2609-15975) | ByteDance | [2609.15975](https://arxiv.org/abs/2609.15975) | Attention机制、模型架构、表示学习、模型压缩、预训练 |
+| 25 | — | [Bellman Policy Optimization](#arxiv-2609-15987) | Princeton | [2609.15987](https://arxiv.org/abs/2609.15987) | 强化学习、策略优化、LLM、RLVR、无价值函数 |
 
-1. [Self-Indexing Attention for Compression-Compatible Sparse Long-Context LLM Inference](#arxiv-2609-13205)
-1. [ReCAST: Reward Credit Assignment across Timesteps for Online Diffusion Reinforcement](#arxiv-2609-13425)
-1. [Safety as a Constraint: Fine-Tuning a LLM Recommender to Explain Itself](#arxiv-2609-13657)
-1. [Addressing Cross-Stage Decoupling of Semantic and Collaborative Signals in Generative Recommendation](#arxiv-2609-13678)
-1. [JumpStart Your Policy Learning with Lessons from 160,000 Training Runs](#arxiv-2609-13730)
-1. [HarnessBandit: Joint Learnability-Transferability Scheduling for Multi-Harness Agentic Reinforcement Learning](#arxiv-2609-13739)
-1. [SpectralShift: Effective Context Window Extension of Gated DeltaNet via Spectral Reparameterization](#arxiv-2609-14320)
-1. [Neural Modal Decomposition: Architectural Priors from Observables](#arxiv-2609-14402)
-1. [VARG: Value-Aware and Ranking-Aligned Generative Retrieval for Dynamic E-commerce Search](#arxiv-2609-14493)
-1. [MANE: A Multi-Path Adaptive Network for Edge Onloading of Deep Neural Networks](#arxiv-2609-14660)
-1. [Func-R1: Incentivizing Mathematical Function Reasoning in Multimodal Large Language Models](#arxiv-2609-14779)
-1. [Route Me If You Can: A Benchmark for Query Reformulation Selection](#arxiv-2609-14885)
-1. [Forty Shades of Blue: Quality-Diversity Alignment via Mode-Conditioned Reinforcement Learning](#arxiv-2609-14896)
-1. [LazFormer: Scaling Transformers for Industrial Recommendation via Transferable Generative Pre-training](#arxiv-2609-14978)
-1. [Not All Prompts Are Equal: Exploration-Guided Prompt Scaffolding for Multimodal Reinforcement Post-Training](#arxiv-2609-15051)
-1. [DA-DLM: Explicitly Modeling Token Dependencies in Diffusion Language Models](#arxiv-2609-15070)
-1. [<span class="paper-math">&#92;(&#92;mathbb&#123;SL&#125;(n)&#92;)</span> Representation Learning: An Intrinsic Mixed-Curvature Space with Higher Curvature Capacities and Deeper Order-Aware Composition](#arxiv-2609-15083)
-1. [Generate to Explore, Select to Exploit: Aligning LLM-based Headline Generation with Personalized Recommendation](#arxiv-2609-15094)
-1. [Reason What Matters: Retrieval-Grounded Reasoning for Universal Multimodal Embeddings](#arxiv-2609-15296)
-1. [Specifying Reward Functions for RL Without Environment Sampling](#arxiv-2609-15544)
-1. [The Token Before the Value Is the Key: How Hybrid Architectures Organize Induction Circuits](#arxiv-2609-15545)
-1. [Self-Evolving Memory for Generative Recommendation](#arxiv-2609-15598)
-1. [Safe Meta-Reinforcement Learning via Information Space Reachability](#arxiv-2609-15915)
-1. [Disentangling Representation Evolution in Transformers through Directional Decomposition](#arxiv-2609-15975)
-1. [Bellman Policy Optimization](#arxiv-2609-15987)
+今日收录 **25** 篇论文。评分为 10 分制阅读推荐度：方向相关性 4 分、方法贡献 3 分、实验证据或论证支撑 3 分；按总分降序排列，同分按 arXiv 编号排序。机构列为已识别的命中机构。点击论文标题跳转正文。各篇阅读范围不同，完整结论请核对原文。
 
 ## Self-Indexing Attention for Compression-Compatible Sparse Long-Context LLM Inference {#arxiv-2609-13205}
 
@@ -315,12 +317,6 @@ Sparse long-context inference requires efficient token retrieval in both prefill
 - 把一位符号索引接入真实部署栈后，容量、并发和吞吐等部署指标相对原生加稀疏基线均有提升；这是附录中的部署压测而非线上长期 A/B 实验，样本为单次洪泛测试，实际生产收益仍待更多场景验证。（Table 4）
 
   图表观察（PDF 第 8 页）：DeepSeekV4-Flash 部署压测（相对 Native+HiSparse）：B1+HiSparse 解码池容量 20.1M 对 15.0M tokens（+34.0%），饱和并发 96 对 71（+35.0%），饱和吞吐 2116 对 1821 tokens/s（+16.2%），端到端 goodput 1666 对 1362 tokens/s（+22.3%），测试时长 46.1 对 56.4 分钟（−18.3%）。
-
-### 图表解读
-
-- Figure 4（PDF 第 5 页）：三联效率图：(a) 预填充延迟柱状图显示加速倍数随上下文从 8K 到 64K 递增（3.7 倍至 6.1 倍）；(b) 解码延迟随批大小和长度增长，64K 批 8 达 10.3 倍；(c) 归一化端到端延迟显示 TTFT 与稳态解码均有改善。纵轴为毫秒级延迟，柱内堆叠选择器与稀疏注意力两部分，说明选择器开销占比小、稀疏注意力主导成本，但倍数是算子路径相对同一栈内稠密基线的结果。
-- Figure 3（PDF 第 4 页）：对比平均池化与 absmax-sign 池化的示意图：同一组查询坐标取值 +9、-8、+1、-2 时，均值池化得零、符号无判别性，absmax 取 +9 的符号。该图直观解释了为何按位取最大绝对值符号能保留组内最强证据，属于机制示意而非实验数据，其收益由表 3 的误差消融支持。
-- Figure 6（PDF 第 7 页）：RULER CWE 任务在三个上下文长度、两个模型上随注意力密度（1%、2%、5%、10%、稠密）变化的准确率曲线：密度从 1% 升到 5% 时准确率快速上升并接近稠密水平，5% 到 10% 增益不再一致。图中未标精确数值点，只能读出趋势；这支持作者把 5% 作为默认工作点的选择。
 
 ### 与小组方向的关联
 
@@ -390,12 +386,6 @@ Training diffusion models with multiple rewards requires distinguishing user pre
 
   > beats static on four of five budgets, and the full method beats no-Sink Rényi on four of five. Averaged across budgets, the adaptive kernel accounts for <span class="paper-math">&#92;(+0.068&#92;)</span> of ReCAST’s total <span class="paper-math">&#92;(+0.099&#92;)</span> gain over static, and the Sinkhorn projection for the remaining <span class="paper-math">&#92;(+0.031&#92;)</span> (this seed’s gap, not the three-seed mean of Tab. 1 ; both parts of the decomposition share the seed).
 
-### 图表解读
-
-- Figure 1（PDF 第 7 页）：三联图：左为各奖励每步增益 <span class="paper-math">&#92;(&#92;Delta D&#95;&#123;i,t&#125;&#92;)</span>，中为均值归一化增益，右为 OCR 设置四奖励的 Sinkhorn 权重矩阵。横轴为 <span class="paper-math">&#92;(t/T&#92;)</span>，从最干净（左）到最噪（右）。GenEval、OCR、ImageReward 的增益峰明显偏向噪声端，其余奖励接近均匀；右图显示投影后每个奖励的权重移向各自高增益步，且行列边际精确成立。OCR 与 GenEval 曲线是从 <span class="paper-math">&#92;(T&#123;=&#125;25&#92;)</span> 重采样到 <span class="paper-math">&#92;(T&#123;=&#125;10&#92;)</span> 网格的，右面板为示意。
-- Figure 3（PDF 第 19 页）：三行对比 <span class="paper-math">&#92;(&#92;pi^+&#92;)</span> 采样与 <span class="paper-math">&#92;(&#92;pi^&#123;&#92;rm old&#125;&#92;)</span> 自 rollout 的估计质量：顶行（<span class="paper-math">&#92;(&#92;pi^+&#92;)</span>）曲线平滑、单峰且峰值位置因奖励而异；中行（同预算自 rollout）曲线锯齿状、逐步震荡并反复触零截断；底行把自 rollout 预算提高十六倍仍同样锯齿。左列显示自 rollout 下多数奖励的累计可区分性接近零，验证了高奖励区域未被估计的退化，说明 <span class="paper-math">&#92;(&#92;pi^+&#92;)</span> 采样是曲线可用的关键。
-- Figure 5（PDF 第 21 页）：左右两图共享纵轴，分别画未训练基策略与训练后 checkpoint-180 的累计可区分性 <span class="paper-math">&#92;(D&#95;&#123;i,t&#125;&#92;)</span>。左图各奖励曲线从数据端的最大值沿轨迹下降到纯噪声端为零；右图训练后四条曲线在整个轨迹上几乎贴零（内嵌小图给出自身尺度）。这表明按重加权目标训练几乎闭合了曲线所基于的策略与正分布之间的散度，且四个奖励同时闭合。
-
 ### 与小组方向的关联
 
 该工作属于强化学习后训练方向，核心是把多奖励的信用分配从静态权重扩展到按时间步动态分配，与小组关注的强化学习、奖励建模和生成式模型训练直接相关。其可区分性增益曲线的估计方式（外部强生成器作提议分布、分母相消、重要性采样修正）是可借鉴的工程设计；把奖励信号的作用时机作为一等研究对象，对设计多目标 RL 微调方案有参考价值，具体收益需在自有任务上验证。
@@ -459,12 +449,6 @@ Netflix 团队微调内部推荐大模型，为推荐结果生成引用用户观
 - 微调后模型在内部检索基准上的归一化 MRR 相对未调策略变化极小且各切片不变，五个公开语言基准也持平或略升，支持“为解释任务微调不损害推荐与语言能力”的结论；这是离线基准观察，不能外推为线上收益。（Section 5 / Table 3）
 
   > To this end, we evaluate each fine-tuned model on an internal retrieval benchmark and five public language benchmarks ( Gao et al., 2024 ) . The detailed results are summarized in Table 3 . For retrieval, normalized MRR increases by <span class="paper-math">&#92;(+0.0006&#92;)</span> to <span class="paper-math">&#92;(+0.0009&#92;)</span> relative to the untuned policy, and remains unchanged across all assessed slices.
-
-### 图表解读
-
-- Figure 1（PDF 第 2 页）：上排展示从裁判训练到约束强化学习的全流程：内部 8B 推荐模型生成解释，两个开源 8B 裁判按偏见、冒犯、忠实三准则打分，右侧示意“安全是约束不是权重”——乘子低于阈值时上升、达标后衰减为零。下排给出微调前后同一条 LGBTQ 题材剧集解释的对比：微调前措辞被标为有偏见和冒犯，微调后同一剧目的解释通过三准则，直观说明约束优化的作用方向。
-- Table 1（PDF 第 4 页）：Panel A 为无害性、Panel B 为忠实性，行依次为前沿裁判、开源 8B 底座、SFT、SFT+RL，列含解析率、准确率、FAIL 类查准查全及分片召回。可观察到未调底座召回高但准确率和查准极低（逢词就判 FAIL 的退化），前沿裁判召回偏低，SFT+RL 取得较好平衡；星号行标注最终选用的奖励配置，增益行给出相对底座与前沿的差值。
-- Table 2（PDF 第 5 页）：生成器对比主表，每行用自训裁判和独立前沿裁判各评一次，列分 all-3、bias、off、fact。可观察到内部模型热身后 all-3 明显上升，四种奖励设计中逐样本联合约束在两个底座上均为最优，标量化最弱；独立裁判列趋势一致，支持收益并非奖励作弊。开源同规模模型组各约束变体在独立裁判下差距较小，选择仍按自训裁判。
 
 ### 与小组方向的关联
 
@@ -531,12 +515,6 @@ Generative recommendation reformulates sequential recommendation as autoregressi
 - 显式文本化注入协同信号优于拼接式和隐式对比式融合，双曲流形对齐也优于常用欧氏对齐目标，支持具体设计选择的合理性；这些比较在同等复杂度与其他组件不变的前提下进行，不能证明该策略在任意配置下都最优。（Table 4 / Table 5）
 
   图表观察（PDF 第 8 页）：协同融合策略对比（NDCG@10）：本文方法在三个数据集分别 0.0546/0.0319/0.0582，优于 MMGRec 式拼接（0.0512/0.0280/0.0557）和 LETTER 式对比监督（0.0523/0.0258/0.0526），LETTER 式在后两个数据集低于无协同信号的消融变体（0.0275/0.0538）。对齐方法对比中 L2 距离与 MMD 损失均劣于双曲流形对齐，MMD 在 Beauty（0.0504）甚至低于无流形对齐变体（0.0487 为 w/o. MA，此处 MMD 略优，但总体仍落后本文方法）。
-
-### 图表解读
-
-- Figure 1（PDF 第 2 页）：示意图展示两阶段流水线：tokenization 阶段由语义驱动（预训练语言模型加量化），生成阶段基于交互数据训练并对码序列重新嵌入。图中两个阶段各自标注的信息流向用于直观说明本文提出的解耦问题，属概念性图示，不包含量化证据。
-- Figure 2（PDF 第 3 页）：总体框架图分三块：协同增强 tokenization 用 CF 模型取相似物品、构造两种提示词后融合量化；语义引导模块用冻结语义表示生成温度 softmax 权重，与可学习码嵌入门控融合；流形对齐把两种表示投影到 Poincaré 球并最小化测地距离。图例区分了冻结与可训练组件，与正文公式一一对应。
-- Figure 5 / Figure 6（PDF 第 9 页）：Figure 5 为 t-SNE 二维可视化，有流形对齐时码表示与语义表示的分布明显更接近，属定性证据，不能证明精确对齐。Figure 6 的门控权重直方图显示：无对齐时权重大量集中于接近 0 的区域，有对齐时分布更对称地集中在 0.5 附近，支持作者关于语义表示被过度依赖的解释，但该机制归因仍属作者解释而非因果证明。
 
 ### 与小组方向的关联
 
@@ -607,12 +585,6 @@ Reliable progress in offline policy learning depends on careful reporting, well-
 
   > Pairwise Kendall’s <span class="paper-math">&#92;(&#92;tau&#92;)</span> ranges from <span class="paper-math">&#92;(-0.16&#92;)</span> to <span class="paper-math">&#92;(0.60&#92;)</span> under optimality gap and from <span class="paper-math">&#92;(-0.07&#92;)</span> to <span class="paper-math">&#92;(0.47&#92;)</span> under IQM. Most pairs exhibit little or negative agreement. In particular, poor transfer is not confined to comparisons between human and machine-generated data; it also occurs between different methods of generating trajectories computationally.
 
-### 图表解读
-
-- Figure 1（PDF 第 1 页）：左右两栏分别为IQM（越高越好）和最优性缺口（越低越好），对DT、BCQ、IQL、ReBRAC、CQL五个算法在49个共享数据集上对比原论文实现（斜纹箱）与本文调参模型（实心箱）。图中可见调参后各算法分数普遍上移，且相对次序发生变化，例如IQL相对BCQ的领先关系在调参后反转；这是点估计层面的趋势展示，不含显著性检验。
-- Figure 9（PDF 第 11 页）：三组子图分别展示能让DT、ACT、BCQ在两种聚合指标下排第一的基准子集，各子图标注子集规模和与全量排行榜的Kendall相关性。可观察到只需约10到12个环境-数据对就能构造出与全量结论不同的冠军，说明与既有评测套件规模相当的子集仍可通过选择性组成支持不同结论，是该小节的核心证据。
-- Figure 20（PDF 第 20 页）：左栏为前三命中率（越高越好），右栏为前三最佳遗憾（越低越好），横轴为各候选推荐模型。随机森林和ExtraTrees明显优于全局均值基线，线性与核方法提升有限；误差棒为环境聚类bootstrap区间，作者指出两个树模型之间统计上不可区分。
-
 ### 与小组方向的关联
 
 对关注强化学习与模型评测的团队，这篇论文提供了可复用的强基线库、25到50次调参预算的实用指引，以及把超参数视为评测一部分的实验设计原则；中位数默认配置和数据条件化推荐的思路也可借鉴到内部算法选型与基准建设。由于它聚焦控制类离线RL，推荐/检索收益未经验证，借鉴时需在自身任务上重新确认。
@@ -677,12 +649,6 @@ Language-model agents are increasingly deployed through diverse harnesses that d
 - 按任务类别拆分看，调度方法在多数类别领先，但两接口混合在与其接口对齐的编码和记忆类上更高，六接口混合无任何类别第一；说明优势随类别分布而变，整体均分领先不等于全面占优。（Section 5.3）
 
   > The two-harness mixture is higher on coding, CSV analysis, meeting analysis, and memory. The six-harness mixture wins no category and scores zero on writing. 5.4 Bandit behavior Figure C.1 (Appendix C ) shows the induced schedule. After warmup the mass is non-uniform: OpenClaw, Pi, and OpenCode end near <span class="paper-math">&#92;(p=0.20,0.20,0.18&#92;)</span> , whereas Qwen Code and Codex end near <span class="paper-math">&#92;(0.13,0.14&#92;)</span> .
-
-### 图表解读
-
-- Figure 1（PDF 第 2 页）：示意图展示核心机制：共享策略面对同一批 ClawGym 任务，六个接口中每步只有一个激活；左框为可学性（组内奖励差异大即有信号），右框为可迁移性（更新方向与其他接口对齐），两信号融合后决定下一次选择。图中图形为示意，不能据此读出具体数值。
-- Figure 2（PDF 第 8 页）：三联图：(a)(b) 分别是预热后归一化可学性与可迁移性的 31 步滑动平均，横轴为训练步、纵轴归一化值，各接口曲线在 0 到 1 间波动且排序不同；(c) 信号图中横纵轴为两信号的均值，标记面积正比于平均采样概率，OpenCode 与 OpenClaw 面积最大，支持两信号互补的定性结论。
-- Figure C.1（PDF 第 12 页）：左图为各接口采样概率随训练步的变化，虚线标记 30 步轮转预热结束；右图为累计访问次数。可见概率质量向 OpenClaw、Pi、OpenCode 倾斜但所有接口保持在探索下限之上，访问数最终在约 21 到 32 之间，说明是温和重分配而非塌缩到单一接口。
 
 ### 与小组方向的关联
 
@@ -751,12 +717,6 @@ Recently, linear attention layers have been increasingly adopted to replace soft
 
   图表观察（PDF 第 3 页）：8K窗口最长距离6535处，Low-Retrieval的H与M为18和1036，High-Retrieval为22和1308；32K窗口最长距离26195处，Low-Retrieval为15和984，High-Retrieval为19和1109。
 
-### 图表解读
-
-- Figure 1（PDF 第 2 页）：示意图分三部分：左侧为GDN层结构（卷积、线性投影与门控delta规则）；右上曲线显示扩展前后累积转移矩阵的慢谱比例随距离的变化，处理后曲线整体更高；右下展示alpha投影从原参数变为均值加缩放偏差、学习率同步缩放。曲线为示意性趋势，未标注精确数值。
-- Table 1（PDF 第 3 页）：表格按8K与32K两个窗口报告最长针—查询距离下任务匹配的慢谱容量，比较Low-Retrieval与High-Retrieval两组。可观察到重参数化组的层头数与慢模式总数在两个窗口均更高，支持慢谱带扩展的论断；数值仅在最长距离处报告，不代表全部距离。
-- Table 3（PDF 第 6 页）：主结果表按目标长度（32K/64K/128K）与训练预算分组，列出通用平均分、DROP、RACE及各长度RULER得分，组内最优加粗。可观察到SpectralShift在绝大多数RULER列领先，通用平均分互有胜负但整体相当；32K组通用分略低于基线，说明收益集中在长距离评测。
-
 ### 与小组方向的关联
 
 该文命中小组关注的Attention机制与模型架构设计方向，且与长上下文、线性注意力在推荐/检索底座模型中的应用相关。可借鉴的点包括：把循环注意力的谱性质作为分析工具、通过极低成本的初始化与学习率缩放改造预训练动力学、以及用探针指标把机制与下游检索表现关联的实证范式。谱带宽度与检索收益的因果关系仍需在更大规模和具体检索任务上验证。
@@ -820,12 +780,6 @@ Many engineering building blocks behave as multi-port linear time-invariant syst
 - 作者论证：当数据生成过程具有已知代数结构时，把该结构嵌入架构可在不显式监督隐参数的情况下恢复它们。这是对涌现现象的解释性论断而非因果证明，其成立依赖物理分解本身是该数据生成过程规范形式这一前提。（Section 4.4）
 
   > When the data-generating process has known algebraic structure, embedding that structure architecturally can substitute for explicit supervision of the latent parameters. 4.5 Limitations We learn <span class="paper-math">&#92;(K&#92;)</span> independent poles, which turns out to be more than the number of physical poles extracted by AAA.
-
-### 图表解读
-
-- Figure 3（PDF 第 7 页）：该图汇总数据与架构：左上为腔体叠层与二端口 S 参数采样设置，右上展示跨边和同边两种端口布置（红为信号端口、蓝为交流短路），下半部分为 NMD 流程图——CavityNet 编码几何得腔体标记，PoleNet 由此输出极点，左右两个 AmpNet 分别按查询端口产生耦合系数，最后逐元素合成阻抗并转回 S 参数计算损失，清晰呈现极点预测与端口查询解耦的信息流。
-- Figure 4（PDF 第 8 页）：六个代表性测试几何各占一列，上排为阻抗矩阵 Frobenius 范数随频率的曲线，真值实线与预测虚线在训练频带（绿色阴影）内外基本重合；下排在复频平面（横轴共振频率、纵轴阻尼率）对比网络预测的前五个主导极点（红叉）与 AAA 参考极点（黑叉），可见两者位置高度重合。这是定性案例对比而非定量统计，不能推出所有样本的极点都精确一致。
-- Table 3（PDF 第 16 页）：消融表列出不同极点数与规范项配置在二端口及三至五端口测试集上的 S 参数 MAE。可读出：K=8 时所有端口数误差明显偏大；K=32 加规范项为默认配置，域内误差最小；去掉规范项后域内误差上升，而三个零样本端口数的误差几乎不变；K=64 无进一步改善。说明规范项只影响域内精度，端口数泛化在极点数达到 32 后饱和。
 
 ### 与小组方向的关联
 
@@ -893,12 +847,6 @@ Integrating recall and pre-ranking in e-commerce search requires candidate gener
 - 渐进消融显示行为反馈贡献了价值召回的主要增益，排序器与相关性反馈提供进一步小幅改善，前缀加权再叠加边际收益；作者对各组件贡献的排序有消融证据支撑，但均为该数据集上的观察。（Table 5）
 
   图表观察（PDF 第 10 页）：Table 5渐进消融：SFT Base的Q2I-GMV Recall@1/10为36.12/95.18，Behavior GRPO为38.31/96.82，Multi-source GRPO为38.52/97.12，完整Prefix-GRPO为38.60/97.21；NDCG@10依次为15.15/15.18/15.29/15.30。
-
-### 图表解读
-
-- Figure 4（PDF 第 9 页）：该图为个性化与冷启动检索案例并列展示。上组Case A在用户上下文（高购买力、近期搜索、兴趣摘要）下生成的五条SID路径共享第一级码、后两级多样，八件展示商品均匹配长袖牛仔衬衫查询且价格带与高购买力画像一致；下组Case B无行为历史，结果以填缝剂及相邻防水修缮商品为主。案例仅提供定性支持，不能证明整体相关性水平。
-- Table 6（PDF 第 10 页）：线上AB表列出七项指标相对生产对照组的相对变化：GMV、人均IPV、UCTR、UCTCVR、PCTR为正，曝光PV为小幅负值。表格未附置信区间或显著性检验，从表中只能读出相对变化的方向与量级，不能推断绝对增益或统计显著性。
-- Table 1（PDF 第 8 页）：Table 1分三部分：标识符容量与冲突、全量重排稳定性、Trie约束解码。可见VARG-ID三词元达到完全唯一且平均每槽一件，而三级RQ-VAE冲突率高；重排部分EB-CVR策略的位移分位数与Top20保留率优于点击量与销量策略，冻结更新则完全不变；解码部分合法率提升伴随小幅时延与显存开销。该表支撑稳定性论证，但均为生产数据上的观察。
 
 ### 与小组方向的关联
 
@@ -968,12 +916,6 @@ Split computing constitutes a widely used distributed inference approach, where 
 
   图表观察（PDF 第 5 页）：端到端性能：MANE 共享头部设备端时延 5ms，MobileNetV2 设备端 73.13%、25ms；ResNet152 服务器 82.64%、15ms，MANE ResNet152 83.98%、13ms；ConvNeXt Small 服务器 89.35%、13ms，MANE ConvNeXt Small 89.39%、11ms（批大小 1）。
 
-### 图表解读
-
-- Fig. 2（PDF 第 3 页）：三阶段训练流程图：第一阶段共享头部同时向多条路径的教师特征做联合蒸馏；第二阶段冻结头部、各路径适配器单独蒸馏；第三阶段接上完整教师尾部，按路径做输出级知识蒸馏。它解释了路径无关表示如何逐步建立，属于流程示意而非结果证据。
-- Fig. 3（PDF 第 5 页）：ConvNeXt Small 在 100ms 目标下随设备数变化的达标率与精度曲线：纯服务器执行约在 15 台设备处跌至零，MANE-NPS 与 MANE-NF 依次在 20、30 台附近失效，MANE 全程维持在约八成达标率；精度子图显示 MANE 从约 20 台起逐步让出精度。横轴为设备数，纵轴分别为达标率与精度百分比。
-- Fig. 6（PDF 第 6 页）：200ms 宽松时延目标下的对比：MANE 从约 25 台设备开始权衡精度，但全程达标率保持在八成以上，精度也在更宽的设备数范围内高于八成；MANE-NF 在 30 台设备处保留约两成达标率而非归零，体现宽松预算带来的余量。趋势与 100ms 设定一致但更平缓。
-
 ### 与小组方向的关联
 
 该论文属于模型结构设计与系统调度结合的方向：多路径尾部加路径无关头部的架构、联合多教师蒸馏的三阶段训练，对关注模型架构与预训练的小组有直接借鉴价值；迟滞调度与公平回退也可迁移到多租户推理服务。可在自己的负载模型下验证多路径权衡是否同样成立，但注意其结论来自单数据集图像分类模拟，不能直接外推到推荐或检索任务。
@@ -1036,12 +978,6 @@ Performing deliberate mathematical reasoning in visual contexts is a hallmark of
 - 把训练框架扩展到几何任务后大幅超过此前最优方法，加入函数数据后进一步在多数学科上优于仅用几何数据训练的版本，提示函数知识有跨域迁移价值；跨数据集趋势不能当作单因素因果结论。（Sec. 3.4）
 
   > Table 3 shows that Geo-R1 delivers outstanding geometric problem-solving performance, leading a 21% improvement over the previous state-of-the-art. SynSci-R1 surpasses Geo-R1 on 6 of 7 tasks, indicating the function-driven mathematical knowledge strengthens cross-domain deductive reasoning.
-
-### 图表解读
-
-- Figure 4（PDF 第 8 页）：柱状图对比单模型上限与解耦架构：Qwen3-VL-8B零样本加提示约45.0，经解析SFT与推理RL逐步提升至54.7，而GPT-5为61.6；解耦两阶段方案达到更高水平。图中标注了各阶段相对提升幅度，需注意这些是对单一模型的逐级增益，不代表各模块独立贡献之和。
-- Figure 5（PDF 第 8 页）：策略优化算法对比曲线，横轴为训练步数，纵轴为FuncReasoning验证集解题率。PATO曲线收敛更快且最终解题率高于GRPO、SAPO与DAPO，末端数值在87至93区间内。该实验在奖励、解码与评测协议一致的条件下进行，支持平滑温度门控带来的稳定收敛，但结论限于该验证集规模。
-- Figure 6（PDF 第 13 页）：错误归因分布堆叠条形图，展示四类问题的视觉误判、知识缺陷与计算偏差占比：平面几何以计算偏差为主，随难度升到函数题，视觉误判与知识缺陷占比明显上升（函数类视觉误判约四成）。这为针对性奖励设计提供动机，但归因比例基于对GPT-5错误的分类统计，存在标注主观性。
 
 ### 与小组方向的关联
 
@@ -1107,12 +1043,6 @@ LLM-based query reformulation can improve retrieval, but no single reformulation
 - 平均检索效果无法完全刻画选择器行为：在网页搜索档位上，近oracle率最高的选择器并非help/hurt画像最优者，另一QPP类选择器以更低的hurt比例取得更好的逐查询收益分布；推理密集档位上两个平均效果相近的选择器近oracle率也接近但路由行为不同。因此需要平均指标之外的决策质量诊断，且这些是查询加权后的分布观察。（Section 5, Figure 2）
 
   > On TREC DL, LLM-as-Judge attains the highest near-oracle rate of 60.5%, but Neural-QPP provides a better help/hurt profile, with 74.1% help and 16.3% hurt compared with 70.1% and 19.0% for LLM-as-Judge . Similar trends appear on BEIR and BRIGHT, where selectors with comparable mean nDCG@10 exhibit different near-oracle, help, and hurt rates.
-
-### 图表解读
-
-- Figure 1（PDF 第 1 页）：横向堆叠条形图，展示Qwen2.5-7B-Instruct生成下各数据集的oracle最优改写器分布，横轴为oracle最优者占比，图例区分原始查询与十种改写方法。图中可观察到不同数据集的最优者构成明显不同，支持逐查询路由存在机会；这只是最优者分布的定性观察，不能直接推出某方法在所有数据集上稳定占优。
-- Table 2（PDF 第 3 页）：主结果表，列为TREC DL、BEIR、BRIGHT各子集及平均，行包括oracle、原始查询、Best-single、随机、监督分类、路由、三类QPP与LLM-as-judge。可观察到每列oracle都高于所有非oracle行，LLM-as-judge多数列领先，BRIGHT整体数值显著低于其他两档。表为单一骨干与BM25设定下的结果，不能外推到其他检索器。
-- Table 3（PDF 第 4 页）：跨检索器与跨域迁移表，列为TREC DL与BEIR在BM25、BGE、SPLADE下的平均nDCG@10。可观察到固定基线在BGE/SPLADE列领先或与原始查询持平，而学习式选择器在BGE的TREC DL列出现极端低值，BEIR/SPLADE列学习式方法普遍塌陷。该表是平均后数值，掩盖了逐查询差异，需结合Figure 2阅读。
 
 ### 与小组方向的关联
 
@@ -1183,12 +1113,6 @@ A notable byproduct of LLM alignment training is mode collapse: the progressive 
 
   图表观察（PDF 第 9 页）：三个子图横轴为Infinite-Chat响应多样性（Disc./SBERT/EmbVendi的均值z分数），纵轴为通用能力（平均基准准确率），MoDA点位于各子图右上角，基线（Qwen3-8B、DARLING两种、DivPO、SSoT）分布在其左下方
 
-### 图表解读
-
-- Figure 1（PDF 第 2 页）：左半为流程示意：模式条件化生成候选回答，经质量门控多样性奖励（含惩罚项）计算带符号的组相对优势后更新策略，低于阈值的候选不获多样性加分。右半展示对“说出一种蓝色”的百次采样色块：基座模型与SSoT的蓝色种类明显少于MoDA，图注给出MoDA比两者分别多出一定百分比的独特蓝色数，属定性对比。
-- Table 1（PDF 第 9 页）：分域多样性表，按四个域和三个模型族分组，列出判别器、SBERT、E-Vendi三种多样性指标与质量分，三个种子平均。可见MoDA在Infinite-Chat、NoveltyBench、HypoBench的多样性普遍领先，但PreScience域的多样性未超过部分基线，说明增益并非在所有域均匀。
-- Table 6（PDF 第 30 页）：消融表对比标准与多样解码下的通用能力均值及Infinite-Chat多样性。仅多样性奖励变体多样性最高但多样解码下能力几乎崩溃，加性加权求和随多样性权重增大出现能力—多样性此消彼长，而MoDA在两列能力上均为最优且多样性领先，支持质量门控分离质量与多样性控制的必要性。
-
 ### 与小组方向的关联
 
 该工作属于强化学习与LLM后训练方向，与小组关注的RL算法设计直接相关。可借鉴点有二：一是把单策略内的多个条件化角色视为竞争智能体，用组内相对优势实现按角色信用分配；二是用冻结参考策略校准的提示自适应质量门控，把多样性奖励与质量约束解耦，避免加权求和的系数敏感问题。这套门控思路对推荐中兼顾相关性与多样性的RL训练有参考价值，但其在推荐场景的收益尚未验证。
@@ -1251,12 +1175,6 @@ Transformers have shown promising performance in LLMs due to their outstanding s
 - 两周线上 A/B 测试在曝光深度、订单、买家和 GMV 四类业务指标上均取得相对提升，且线上吞吐下降有限，验证了方法在真实部署中的商业价值；这是单一平台首页场景的结果，指标间的因果归因和跨场景适用性仍需进一步检验。（Table 7, Section 4.7）
 
   > Compared with the baseline, LazFormer achieves relative improvements of 5.21% in IPV ( i.e. , item page view), 3.38% and 3.70% in the numbers of orders and buyers, respectively, and 9.85% in GMV.
-
-### 图表解读
-
-- Figure 1（PDF 第 3 页）：框架图左侧为生成式预训练分支（token 化加 Transformer 块），右侧为请求感知排序：可迁移残差适配器位于共享特征与排序专属特征的汇合处，元素级相加后进入 Transformer 块，右上放大图显示门控多头自注意力与混合稀疏注意力掩码。它帮助理解稀疏、稠密两条迁移路径与排序输入组织方式，属结构示意而非效果证据。
-- Figure 3（PDF 第 8 页）：两个子图横轴均为 FLOPs（G），纵轴分别为 CTR 的 AUC 与 GAUC；参数缩放（Small、Medium、Large）、序列长度缩放（512、2048、9216）和数据缩放（一至三轮）三条曲线族均随计算预算单调上升，为作者所称的缩放规律提供可视化支持。但观察范围止于该工业数据集和所测预算区间，不能外推为通用缩放定律。
-- Figure 5（PDF 第 9 页）：热力图比较全自注意力与四种稀疏配置的 CTR 指标、注意力加速比与稀疏度：AUC 从全注意力的 0.7745 随稀疏度上升缓慢下降至 0.7735，加速比从 1 倍升至 5.1 倍，稀疏度从 5.54% 升至 92.63%。数值在图中直接可读；它说明性能损失远小于计算节省，但这是训练侧注意力算子的加速比，不等同于整个线上请求的时延下降。
 
 ### 与小组方向的关联
 
@@ -1327,12 +1245,6 @@ Training prompts in online reinforcement learning (RL) differ substantially in h
 
   > This indicates that moderately informative prompts still contribute useful diversity and should not be discarded aggressively. Near-zero-EPS prompts reduce training efficiency. Comparing the <span class="paper-math">&#92;(&#92;mathrm&#123;EPS&#125;&gt;0&#92;)</span> setting against the unfiltered pool reveals a 4.10-point gap, suggesting that prompts with near-zero estimated utility can impede training.
 
-### 图表解读
-
-- Figure 2（PDF 第 5 页）：框架总览图：左侧动态提示池采样进入策略模型做 rollout，奖励分布送入 EPS 估计器计算分数；判断框按分数是否大于阈值分流——保留提示走绿色路径做 GRPO 更新，低分提示经异步蒸馏路径送入教师模型生成脚手架后回填提示池。图中清晰呈现打分、过滤、改写、刷新与主训练循环解耦的结构。
-- Table 1 / Table 2（PDF 第 6 页）：两张主结果表分别对应 Geometry3K 与 MMK12 训练，行组为 N/A（零样本）、SFT、GRPO、Ours，列为域内测试集与四个分布外基准及平均值，粗体标出各骨干块内最优。可观察到 Ours 在几乎所有列上领先 GRPO，MMK12 设定下分布外增益更大；表中为准确率百分比，未报告方差或多 seed 结果。
-- Figure 3（PDF 第 6 页）：EPS 效用信号分析图：横轴为前 1000 个训练步，纵轴为 MMK12 验证准确率，四条曲线对应不同 EPS 过滤区间。曲线整体上升且高 EPS 组位置偏高，但各曲线波动明显、相互交叠，只能支持分组间存在趋势性差异的定性结论，不宜读出精确稳态数值。
-
 ### 与小组方向的关联
 
 与小组关注的强化学习、多模态 LLM 后训练和课程式数据构造方向直接相关。EPS 提供了一个零额外 rollout 开销的提示效用信号，其“教师改写训练数据而非模仿输出”的思路可借鉴到难样本的在线改造与课程采样中；但收益目前只在可验证奖励的数学推理任务上验证，迁移到奖励不易量化的场景属于待验证设想。
@@ -1401,12 +1313,6 @@ Diffusion Language Models (DLMs) generate text by iteratively denoising a masked
 - 微调后的摘要任务上，DA-DLM 在两个数据集的平均 ROUGE 均超过 BD3LM 并接近自回归基线，优势集中在 ROUGE-1 与 ROUGE-L，作者解释为联合建模帮助保持主题与顺序连贯；填充提升并行度而对质量影响很小。该结论限于块大小取一、确定性解码的摘要场景。（Table 4, Section 4.3）
 
   > The advantage concentrates on ROUGE-1 and ROUGE-L, suggesting that DA-DLM’s joint modeling over paths helps the model stay on topic and maintain sequential coherence. Both BD3LM and DA-DLM generate multiple tokens per forward pass under confidence-aware decoding alone, indicating strong task adaptation.
-
-### 图表解读
-
-- Figure 1（PDF 第 2 页）：图中展示一个去噪步的完整流程：底部输入包含一个锚点组与三个候选组，中间层 DA-DLM Transformer 产生逐节点发射概率与组间转移，上层依次完成路径选择、重遮蔽并生成下一步的新 DAG。可看到候选组随词被固定逐步退化为锚点，直观解释依赖建模与锚点约束如何在一步内协同工作。
-- Figure 2（PDF 第 7 页）：三个子图分别对应块大小 16、8、4，横轴为时延调整后的 TPF，纵轴为 MAUVE。可观察到 DA-DLM 的实线 Pareto 前沿整体位于 BD3LM 之上，中高效率区差距明显；开启填充的空心标记把 DA-DLM 前沿进一步推向更高 TPF 区域。两模型在最右侧高效率尾部都退化，阴影区仅为作者标注的 DA-DLM 优势区间，具体数值需参照附录表格。
-- Table 5（PDF 第 8 页）：表格列出两种模型在三种块大小下的每步时延与显存。可读出 DA-DLM 相对 BD3LM 的时延增加随块变小而缩小，峰值显存差最多几十 MiB 量级；时延测量涵盖完整去噪更新（含模型计算与采样、重遮蔽），在 A800 上批大小 32、预热十次后平均十次测得，计时范围是整步更新而非仅算子。
 
 ### 与小组方向的关联
 
@@ -1477,12 +1383,6 @@ Mixed-curvature representation learning seeks to capture rich geometric structur
 
   图表观察（PDF 第 9 页）：表 5 显示随序深度增大性能上升：Heisenberg（深度为 1）OrderAcc 为 94.28，UT(6)（深度为 4）为 96.30，UT(15)（深度为 13）为 97.25，完整有序复合的 SL(4)（深度为无穷）达到 97.46±0.07 且 HardAcc 与 MRR 最优；去掉有序复合的交换控制组大幅跌至 17.97。
 
-### 图表解读
-
-- Table 2 / Figure 4（PDF 第 7 页）：图 4 用 Ollivier–Ricci 曲率展示三个规模递增的生物网络，色标覆盖负、近零、正曲率并标注高混合熵节点，说明数据本身具有混合曲率结构；表 2 中 SL(8) 平均失真 0.0329 为全表最低，较最优基线相对改善 44.3%，各分位与分组失真列均为最优，但论文指出性能对容量指标并非严格单调。
-- Figure 6 / Table 5（PDF 第 9 页）：图 6 左为矩阵维度与 Schatten 阶数的三维失真曲面，显示偏好阶数随维度明显变化；右图（对数纵轴）显示测试失真随维度快速改善后趋平。表 5 显示语序准确率随序深度上升，完整 SL(4) 最优，去掉有序复合后大幅下降，但此为单一冻结骨干下的定性趋势。
-- Table 7（PDF 第 16 页）：表 7 对比闭式 Schatten 半距离与数值测地参考距离：随阶数增大，平均相对偏差从约两成七降至约一成二，Pearson 与 Spearman 相关稳定在零点九以上；而数值测地每对需数百秒，比半距离慢约十万至二十几万倍，支持用半距离替代精确测地距离做大规模训练的选择。
-
 ### 与小组方向的关联
 
 该工作与小组关注的模型架构设计与预训练表示直接相关：它把混合曲率几何与非交换复合统一进单一潜空间，可视为给排序/召回类任务提供了新的嵌入几何候选。Flickr30k-Order 的序深度分析对序列建模有借鉴意义；将其接入 GNN、Transformer 或语义 ID 体系属于作者提出的待验证方向，实际推荐检索收益尚需自行实验确认。
@@ -1552,12 +1452,6 @@ In industrial recommendation feeds, presenting a static headline for an item oft
 
   图表观察（PDF 第 7 页）：Table 4：去除质量约束后CTR Score升至12.79，但NLI降至47.32、ROUGE-L降至11.65；去除多样性奖励后Self-BLEU升至19.73；去掉SFT的冷启动RL的Distinct-N-Gram最低为37.83。
 
-### 图表解读
-
-- Figure 2（PDF 第 4 页）：框架图分左右两阶段：左侧离线阶段由SFT数据和CTR数据分别训练SFT模型与奖励模型，再经分层奖励驱动的GSPO更新得到强化学习后的生成器，单次生成多条候选标题；右侧在线阶段由公平曝光策略、选择模型和用户点击数据回流构成冷启动闭环。图中用NBA相关标题示意同一资源的多样化假设，直观呈现生成与选择的职责分离，但仅为流程示意，不代表各阶段成本或样本量。
-- Table 2（PDF 第 6 页）：线上A/B结果以原始标题为基线，四行方法对应CTR、曝光、停留时长三列的相对提升。从SFT-Only的负值到SFT配Bandit转正、GSPO配Bandit再升、完整GESE最高，呈现单调改善趋势；表格未给出方差或显著性检验信息，数值应理解为点估计。
-- Table 3 / Table 4（PDF 第 7 页）：Table 3按多样性、质量保真、吸引力三组指标比较大规模模型、SFT-Only与GESE：GESE的Self-BLEU与Distinct-N-Gram最优，NLI仅次于DeepSeek-V3.1，CTR Score最高。Table 4消融显示去质量约束后CTR Score反而更高但NLI大幅下滑，去多样性奖励后Self-BLEU接近翻倍，两个奖励项相互制约，单看吸引力指标会误导。
-
 ### 与小组方向的关联
 
 与小组关注的生成式推荐、LLM与推荐结合和强化学习方向高度契合。可借鉴的设计有三点：把个性化从点估计改为集合覆盖的优化目标、用组内归一化的GSPO天然抑制候选同质化、以及离线RL生成与在线Bandit加排序器利用的分层部署模式；奖励破解的消融也提示生产环境必须保留事实性护栏。线上收益比例有待在自己场景复测，不能直接照搬。
@@ -1625,12 +1519,6 @@ Universal multimodal embedding (UME) learns unified representations across modal
 
   图表观察（PDF 第 9 页）：Table 3报告MMEB-V2（Qwen2-VL-2B）核心消融：ReWAM总体66.5（Image 71.6、VisDoc 72.8、Video 47.7），去掉RASD降为65.7，去掉CoT降为62.3，仅用原始输入为63.1；对原始输入的增益在视频任务上最大。
 
-### 图表解读
-
-- Figure 2（PDF 第 4 页）：图2完整展示三阶段流水线：(a)监督微调用对比损失训练CoT条件嵌入器；(b)RASD中分析器产生证据、边界、支持、冲突四类特权信息，自教师对同一采样序列重新打分得到token级权重去调制轨迹优势；(c)RAI中置信头预测剩余效用决定截断，草稿模型块状生成由目标模型验证。三段共享冻结的嵌入器与推理器，体现了训练监督与推断加速解耦的设计。
-- Table 6（PDF 第 9 页）：表6按草稿块长度K与有无置信头分组，三个模态各报检索分数、平均CoT token数和吞吐。可观察到：仅投机解码时链长几乎不变而吞吐升至基线两倍多；加置信头后链长缩短约三成、吞吐再增，检索分数变化很小；K从4到7吞吐继续上升。它支持RAI的两条加速路径可叠加，但均为MMEB-V2离线结果。
-- Figure 3（PDF 第 9 页）：图3为三个子图，横轴是草稿块长度K，纵轴是平均接受token数，比较贪婪验证与投机验证。三条曲线随K递增并在K=7仍未饱和，贪婪验证在图像、视觉文档、视频上均高于投机验证。作者解释为训练轨迹由贪婪生成，草稿与目标的首选token更一致；这只是训练分布带来的观察，不能推出贪婪部署一定更优。
-
 ### 与小组方向的关联
 
 可借鉴用检索反馈分配 token 级奖励，以及结合检索置信头与投机解码控制生成式召回成本的设计。迁移到文本或语义 ID 检索的收益需在目标场景复测。
@@ -1695,12 +1583,6 @@ Enabling human stakeholders to specify reward functions that lead to their desir
 - 消融表明从LLM设计的低维特征空间采样想象轨迹，远优于直接从高维原始观测空间采样；作者解释原始空间含大量与目标无关的冗余特征，使不确定性采样被无关差异吸引。该消融仅覆盖两个环境，不能直接推广到交通环境。（Table 4）
 
   图表观察（PDF 第 12 页）：消融表比较EARS（2k随机偏好，从LLM设计特征空间采样）与直接从环境观测空间采样的Raw obs变体，覆盖Pandemic与Glucose两个环境各两个真实奖励。Designed feats四列为.73±.01、.94±.02、.74±.03、.71±.06；Raw obs四列为-.42±.00、-.05±.02、.44±.01、.07±.04。
-
-### 图表解读
-
-- Figure 1（PDF 第 4 页）：流程示意图分两列：左侧Stage 1中任务描述与观测空间输入相关者LLM，与协调者LLM结构化对话后依次实现特征、确定范围，输出特征集合；右侧Stage 2循环执行批量采样想象轨迹、选不确定性最高的对、请求偏好标签、积累数据集，最终输出奖励函数。两阶段均不与环境交互，体现零环境采样的设计。
-- Figure 2（PDF 第 8 页）：六个子图对应三个环境各两个对齐目标，横轴为偏好数量（对数刻度），纵轴为TAC。紫色EARS曲线与绿色LTRRT曲线随标签数上升较快并趋于接近，橙色Offline-RLHF明显更低且上升更慢。阴影为五个种子的标准误，趋势支持EARS标签效率不劣于真实轨迹基线，但图中未标注精确数值。
-- Table 4（PDF 第 12 页）：消融表在Pandemic与Glucose环境比较设计特征与原始观测两种采样来源，各两列对应两个真实奖励。设计特征四列TAC均为正且较高，原始观测四列明显更低，其中两列为负值，说明跳过Stage 1会严重损害对齐，支持低维特征空间是方法有效性的关键组成部分。
 
 ### 与小组方向的关联
 
@@ -1769,12 +1651,6 @@ Hybrid language models can improve capability as well as efficiency, raising the
 - 在八层混合中，早期学习率降低改善多个多续写召回困惑度但恶化单续写远距离困惑度，移除卷积呈现同样对比；Transformer 的学习率降低则使所报告条件上的困惑度全面上升。召回结果随配置与目标而异，说明改变 Carrying 条件会重组电路并影响自然文本预测，但方向不能一概而论。（Table 2（自然文本召回））
 
   > In the eight-layer hybrids, early LR reduction lowers several multiple-continuation recall PPLs but raises single-continuation far PPL. GDN convolution removal shows the same contrast; Transformer LR reduction raises PPL across the reported conditions (Table 2 ).
-
-### 图表解读
-
-- Figure 2（PDF 第 4 页）：上排为单次运行的 lag 敏感性热图，横轴为层、纵轴为偏移，三种架构在偏移一处颜色最深；下排为三个种子的 Carrying 与 Matching 层剖面，混合模型峰值分别落在高效组末端与紧随的全局层，Transformer 峰值更深且跨种子位置不同。轮廓标行最大值，轨道标全注意力层。
-- Figure 4（PDF 第 6 页）：左列 A/C 为 SWA 窗口 2/8/16 在固定层的 Carrying 与 Matching 形成曲线，横轴为训练步（千），纵轴为 margin 效应；窗口 2 的 Carrying 最早上升，宽窗口后期更高。右列 B/D 比较自然与归纳富集文本，Transformer 富集条件下曲线更早上升，两个混合条件上升区间相近。
-- Figure 5（PDF 第 7 页）：A 面板为 318M 模型五种干预条件的 Carrying 与 Matching 层剖面，行标签给出学习率乘数与受影响层组，不同干预使峰值路由偏向早期、中期或晚期阶段；B 面板为 Qwen3-4B 与 Qwen3.5-4B 的全层固定 token 关联扫描，Qwen3.5 的最强 Carrying 位于紧邻最强全局 Matching 的 GDN 层。
 
 ### 与小组方向的关联
 
@@ -1845,12 +1721,6 @@ Generative recommendation has emerged as a promising end-to-end paradigm for per
 
   图表观察（PDF 第 12 页）：Games 各周期 TIGER 活跃/不活跃组梯度余弦为 -0.01/-0.13/-0.08/-0.00，LION 为 +0.48/+0.56/+0.68/+0.58；CDs 上 TIGER 为 -0.03/-0.08/+0.14/-0.01，LION 为 +0.71/+0.84/+0.86/+0.74。
 
-### 图表解读
-
-- Figure 2（PDF 第 2 页）：柱状图展示 Toys 数据集上 TIGER 从 Period 0 到 Period 1 各用户组的 Recall@10：全体从约 0.0746 降到 0.0631，活跃组 G1 从 0.0091 升到 0.0151，不活跃组 G3 从 0.0422 降到 0.0257，G4、G5 亦下降。该图直观呈现进化后常见模式受益、低频模式受损的现象，是进化冲突的实证动机，但仅覆盖单数据集两个周期。
-- Figure 5（PDF 第 12 页）：分组柱状图对比 TIGER 与 LION 在稀疏记忆层上活跃组与不活跃组聚合梯度余弦，横轴为周期 P0–P3，纵轴为余弦相似度。图中可观察到 TIGER 各期余弦接近零或为负（最低约 -0.13），LION 全为正且多在 0.48 以上，与冲突被隔离到重叠区的理论预测方向一致；数值为训练后检查点的观察量，不代表所有层。
-- Figure 7（PDF 第 13 页）：折线图给出 Games 与 CDs 上 TIGER 与 LION 的逐 epoch 评估损失，横轴为累计 epoch，纵轴为 Eval Loss。两条曲线在每个新周期起点都出现损失跳升后回落，LION 红线在各周期均收敛更快且收敛终点更低，与 TIGER 的差距跨周期未收窄；这支持记忆层降低有效梯度噪声带来的更快收敛，属于优化效率层面的定性证据。
-
 ### 与小组方向的关联
 
 该工作同时命中小组关注的生成式推荐、语义 ID、模型架构与 Attention 类骨干设计方向。稀疏 KV 记忆层是 MoE 式条件计算在推荐持续学习中的实例，隔离演化加辅助巩固损失的思路可借鉴到多模式偏好的流式适配；梯度冲突的理论界定与余弦度量也可复用为诊断工具。其结论基于 T5 骨干与亚马逊中小数据集，能否迁移到工业级召回排序管线和更大骨干需自行验证。
@@ -1919,11 +1789,6 @@ Meta-reinforcement learning (meta-RL) enables agents to adapt to unseen tasks wi
 - 作者将结果解释为方法能从有限经验中推断奖励与安全之间任务相关的张力并据此调整策略。这是对图中行为的解释，因果机制未被单独消融验证；速度对齐与冲突两种情形的差异表明适应能力，而非证明其在任意不确定任务下都能保持低违规。（V Experiments）
 
   > As the target velocity exceeds <span class="paper-math">&#92;(v&#95;&#123;&#92;max&#125;&#92;)</span> , ISDAC consistently maintains a low violation rate by learning to trade off return against safety. These results demonstrate that ISDAC can infer the task-dependent tension between reward maximization and safety from limited experience, and adapt its policy accordingly.
-
-### 图表解读
-
-- Fig. 1（PDF 第 7 页）：三列对应平均、后退与前进任务，上排为回合回报、下排为回合违规步数，横轴为环境步数。可观察到 PEARL 回报最高但违规随训练上升到百余步；ISDAC（绿色）违规曲线贴近零，回报与 PEARL-Lagrangian 接近。阴影为三种子标准差，前中期波动较大，只反映该基准趋势。
-- Fig. 2（PDF 第 8 页）：左列为 30 个测试任务的平均，其余五列为不同目标速度的代表性任务。随目标速度增大、与安全阈值冲突加剧，PEARL 的违规步数明显升高，PEARL-Lagrangian 有下降但未归零，ISDAC 在冲突情形仍保持接近零的违规，回报略低于 PEARL，体现方法在冲突任务中的安全-回报权衡。
 
 ### 与小组方向的关联
 
@@ -1995,12 +1860,6 @@ Transformer representations evolve through learned additive transformations that
 
   > Table 3 reports downstream zero-shot accuracy across six standard benchmarks for the scaled 1.4B and 2.7B models. Both interventions improve downstream performance over the baseline at both scales, with value-space parallel removal achieving the largest gains ( <span class="paper-math">&#92;(+0.7&#92;)</span> points on 1.4B and <span class="paper-math">&#92;(+1.5&#92;)</span> points on 2.7B).
 
-### 图表解读
-
-- Figure 3（PDF 第 6 页）：左图仅改变平行缩放 <span class="paper-math">&#92;(s&#95;&#123;&#92;parallel&#125;&#92;)</span>，值空间（排除自）曲线在区间内几乎平坦，残差注意力居中，残差MLP在区间外迅速恶化；右图改变垂直缩放 <span class="paper-math">&#92;(s&#95;&#123;&#92;perp&#125;&#92;)</span>，三个站点在偏离1后困惑度按对数轴急剧上升，值空间与残差注意力达数万点量级，残差MLP达百万点量级。横轴为保留缩放，纵轴为相对无操作的困惑度差，直观呈现方向不对称性。
-- Figure 5（PDF 第 8 页）：三个子图分别对应296M、436M、528M模型的OpenWebText验证损失轨迹，横轴为训练迭代，纵轴为验证损失，对比基线、残差空间注意力平行删除与值空间平行删除（均 <span class="paper-math">&#92;(s&#95;&#123;&#92;parallel&#125;=0&#92;)</span>）。图中可观察到两条干预曲线从早期起持续低于基线，值空间删除更低，优势延续到最后检查点而非终点偶然现象；图未标注精确数值差距。
-- Figure 9（PDF 第 15 页）：把压缩误差分解扩展到块级更新与MLP分支，四行子图中左列为垂直误差、右列为平行误差，横轴为层号，纵轴为按基线更新范数归一化的误差。各子图中垂直误差按AWQ、非结构化、4:8、2:4清晰分层，与下游保真度排序一致；平行误差曲线交叉、非单调。证据为12个提示词上的层均值趋势，支持垂直误差的区分力结论。
-
 ### 与小组方向的关联
 
 该文与小组关注的Attention机制、模型架构设计与预训练方向直接相关：分量缩放干预框架成本低（前向钩子实现，报告开销很小），可作为分析注意力自指路径与跨token聚合冗余的诊断工具；压缩误差的方向分解思路也可借鉴到量化剪枝评估。预训练中抑制平行分量的收益幅度温和，是否适用于我们的训练配置需自行验证，不宜预设收益。
@@ -2065,12 +1924,6 @@ Reinforcement learning with verifiable rewards (RLVR) improves the reasoning cap
 
   > BPO ( <span class="paper-math">&#92;(&#92;epsilon=0.05&#92;)</span> ) 31.6 23.0 22.8 25.8 BPO ( <span class="paper-math">&#92;(&#92;epsilon=0.1&#92;)</span> ) 27.6 26.8 21.8 25.4 BPO ( <span class="paper-math">&#92;(&#92;epsilon=0.2&#92;)</span> ) 29.1 24.3 23.0 25.5 BPO ( <span class="paper-math">&#92;(&#92;epsilon=0.3&#92;)</span> ) 26.4 25.5 20.4 24.1 GRPO-ClipHigher 22.1 22.8 16.6 20.5 BPO achieves similar average accuracies of 25.4%–25.8% for <span class="paper-math">&#92;(&#92;epsilon&#92;in&#92;&#123;0.05,0.1,0.2&#92;&#125;&#92;)</span> .
 
-### 图表解读
-
-- Figure 1（PDF 第 2 页）：横轴为训练步数（0 到 400），纵轴为 AIME24-26 平均准确率百分比。五条曲线中 BPO（蓝）从约百步起整体领先并最先接近峰值虚线（50.5%），终点约 49.4%；GRPO-ClipHigher（绿）在约 230 步后趋于停滞甚至回落。曲线显示单次训练的均值趋势，无方差区间。
-- Figure 2 / Table 2（PDF 第 18 页）：Qwen3-4B 消融：固定截断参数，扫平滑参数四个取值。图 2 中四条 BPO 曲线走势接近、均高于 GRPO-ClipHigher（绿），后者在约 850 步后明显下滑；表 2 给出各设置峰值平均准确率在 24.1 到 25.8 之间，基线为 20.5，说明对平滑项取值不敏感。
-- Figure 3 / Table 3（PDF 第 19 页）：固定平滑参数，扫截断参数三个取值。三条 BPO 曲线在图中高度接近，峰值平均准确率介于 25.3 与 25.8 之间，极差仅约半个百分点，均超过基线的 20.5；GRPO-ClipHigher 后期回落更明显。该趋势支持截断上限设置稳健，但仅在小模型上验证。
-
 ### 与小组方向的关联
 
 论文与小组关注的强化学习方向直接相关：它给出一条从 PMD 到无 critic 损失的完整推导，指出 BPO 的失配校正权重可以直接替换 GRPO 中的重要性采样比，改动量小、接口清晰，值得在现有 RLVR 训练管线中作为策略损失备选做对照实验；其二元 KL 恒等式和鞅式证明也可作为处理训练与推理失配的理论参照。但收益目前只在数学基准的离线训练中报告，未涉及推荐、检索等场景，落地前需自行复现验证。
@@ -2081,4 +1934,4 @@ Reinforcement learning with verifiable rewards (RLVR) improves the reasoning cap
 - 从材料可以合理提出的验证问题：BPO 的理论等价性只在 rollout 可达状态上成立，而实用损失经过了线性化、组估计、二元 KL、平滑与截断等多重近似，哪一步近似在训练中贡献最大尚无逐项消融；方法也未在代码生成、通用对话奖励或非终端奖励形态的任务上检验。
 - 本次阅读范围限于随附 PDF 与正文片段，论文正文与结论部分均未提及代码仓库或开源声明，本次也未核验任何复现环境，能否复现需以作者后续发布为准。
 
-<span id="digest-content-e851740553927b8369d5208246a2bf97bf1ac59ea7dcd447a75cd40b257e5707" hidden></span>
+<span id="digest-content-002e1be44bfcfba4cc2094ee859698070e0276188751c56eb0580cdabf5eedac" hidden></span>
